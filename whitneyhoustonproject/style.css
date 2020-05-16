@@ -1,0 +1,517 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*universal styles*/
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+
+
+}
+
+.sectionTitle {
+	font-family: "Monoton";
+	font-size:2em;
+	line-height: 1.5em;
+	color:#E007DB;
+	padding-bottom: 0px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.5em;
+}
+
+.narrower-content { /*use with a div to create an indented center content. good for long paragraphs*/
+	/*width: 1000px;
+	margin: 0 auto;*/
+}
+
+#siteContainer {
+	margin:0 auto;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+/* header */
+
+#siteTitle {
+	background-color: white;
+	width: 500px;
+	height: 60px;
+	font-size: 2em;
+	font-family: "Monoton";
+	line-height: 60px;
+	float:left;
+}
+
+#siteTitle a {
+	color:black;
+	text-decoration: none;
+}
+#slugline {
+	float:left;
+	width: 350px;
+	height: 50px; /*height plus padding-top equals height of siteTitle*/
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	padding-top:10px;
+	background-color: white;
+}
+
+#quote {
+	font-family:'Pathway Gothic One', sans-serif;
+	width: 550px;
+	height: 60px;
+	font-size: 1.5em;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #000;
+	float:left;
+	background-color: white;
+	
+	
+}
+
+#header {
+	width: 1400px;
+	height: 670px; /*siteTitle height plus navlinks height plus headerImage height*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+#heroPageTitle {
+	width:800px;
+	line-height:600px;
+	padding-left: 50px;
+	float:left;
+	font-family: "Monoton";
+	font-size:100px;
+	color: #fff;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.90);
+}
+
+/*header banner/hero images */
+#headerImage-early-life {
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2017/06/whitney-houston-credit-david-corio.jpg");
+	background-size: cover;
+	background-position: bottom;
+	float:left;
+	
+}
+
+#headerImage-career {
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elm070118cultureopenermusic-009-ron-bull-toronto-star-getty-1530622182.jpg");
+	filter: grayscale(100%);
+	background-size:cover;
+	background-position: top left;
+	float:left;
+}
+
+
+
+#headerImage-awards {
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://www.sigmalive.com/en/uploads/images/news/rtr_whitney_houston_jc_150911_12x5_1600.jpg");
+	filter: grayscale(100%);
+	background-size:cover;
+	background-position: center;
+	float:left;
+}
+
+#headerImage-memoriam {
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://media.newyorker.com/photos/590973bfc14b3c606c10846a/master/pass/Henderson-Whitney-Houston-and-the-National-Anthem.jpg");
+	filter: grayscale(100%);
+	background-size:cover;
+	background-position: center;
+	float:left;
+}
+
+#headerImage-contact-us {
+	width: 1400px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://www.usmagazine.com/wp-content/uploads/2018/05/whitney-houston.jpg");
+	filter: grayscale(100%);
+	background-size: cover;
+	background-position:top right; 
+	float:left;
+}
+
+
+
+
+/*navigation styles */
+
+.navLinks {
+	margin: 0;
+	padding: 0px;
+	
+}
+
+.navLinks a:link {
+    width: 280px;
+    height: 30px;
+    display: inline-block;
+	float:left;
+    margin:0px;
+    color: #fff;
+    background-color: #E007DB;
+	text-transform: capitalize;
+    text-decoration:none;
+	text-align:center;
+	font-family: "Montserrat", sans-serif;
+	font-size: .9em;
+	letter-spacing: 2px;
+	line-height:30px;
+}
+
+.navLinks a:visited {
+    color: #fff;
+    background-color: #E007DB;
+    text-decoration:none;
+}
+
+.navLinks a:hover {
+    color: #E007DB;
+    background-color: #fff;
+	font-weight:bold;
+}
+
+/* internal page content nav */
+
+.contentMenu {
+	position: absolute;
+	top: 475px;
+	left: 100px;
+}
+
+.contentMenu a:link{
+	display:inline-block;
+	margin-right: 20px;
+	background-color: #fff;
+	color:#E007DB;
+	border-radius: 20px;
+	text-transform: uppercase;
+    text-decoration:none;
+	padding: 8px 5px;
+	width:230px;
+	text-align:center;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.90);
+}
+
+.contentMenu a:visited {
+	background-color: #fff;
+	color:#E007DB;
+}
+
+.contentMenu a:hover{
+	background-color: #E007DB;
+	color:#fff;
+}
+
+.backTOtop {
+	margin: 75px auto 0;
+	width: 240px;
+	height: 38px;
+	clear:both;
+}
+
+.backTOtop a:link{
+	display:inline-block;
+	background-color: #fff;
+	color:#E007DB;
+	border-radius: 20px;
+	text-transform: uppercase;
+    text-decoration:none;
+	padding: 8px 5px;
+	width:230px;
+	text-align:center;
+	border: 1px solid #E007DB;
+}
+
+.backTOtop a:visited {
+	background-color: #fff;
+	color:#E007DB;
+}
+
+.backTOtop a:hover{
+	background-color: #E007DB;
+	color:#fff;
+}
+
+/* content styles */
+
+#mainContent {
+	width: 1200px;
+	margin: 0 auto 50px;
+}
+
+.imageRight {
+	float: right; 
+	padding-left: 20px; 
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	width: 300px;
+}
+
+.imageLeft {
+	float: left; 
+	padding-right: 20px; 
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	width: 200px;
+}
+
+/*table styles used in career page */
+
+table.career {
+	margin-top: 25px;
+	width: 1200px;
+	left:0;
+	position: relative;
+	border-collapse: collapse; /*makes border on tr appear */
+	
+}
+
+.career tr {
+	border-bottom: 50px solid white; /*adjusts the spacing between rows using a border. margin and padding do not work. */
+}
+
+.career tr:last-child {
+	border-bottom: 0; /*removes border from the last row so as not to interfere with margins/spacing of following elements */
+}
+
+.career td {
+	margin:0;
+	padding: 0 0;
+	vertical-align: top;
+	border: none;
+}
+
+.career td:first-child {
+	font-weight: bolder;
+	width: 150px;
+	font-size:1.5em;
+}
+
+.career td:nth-child(2)  {
+	width: 950px;
+	padding: 0 10px;
+}
+
+.career td:nth-child(2) a {
+	text-decoration: none;
+	font-style: italic;
+}
+
+
+.albumCover {
+	height: 300px;
+	float:left;
+	padding-bottom: 20px;
+	padding-right: 20px;
+
+}
+
+/*table styles used in awards page */
+
+table.awards {
+	margin-top: 0;
+	width:570px;
+	left:0;
+	position: relative;
+	border-collapse: collapse; /*makes border on tr appear */
+	
+}
+
+
+.awards td {
+	margin:0;
+	padding: 10px 0;
+}
+
+.tableHEAD td {
+	color:#E007DB;
+	font-weight: bolder;
+	padding-bottom: 15px;
+}
+
+.awards tr:nth-child(even) {
+	background-color: #DBD1DB;
+}
+
+.awards td:first-child {
+	width: 250px;
+}
+
+.awards td:nth-child(2),td:nth-child(3)  {
+	width: 130px;
+	padding: 0;
+}
+
+/*table styles used in contact page */
+
+table.contactForm {
+	background-color:transparent;
+	width: 1000px;
+	margin: 0 auto;
+	font-size:16px;
+	line-height: 20px;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 1px;
+	border-collapse: collapse;
+}
+
+.contactForm tr { /*use border with border-collapse to increase space between table rows */
+	border-bottom: 10px solid transparent; 
+}
+
+.contactForm input {
+	font-size:16px;
+	line-height:30px;
+	font-family: "Montserrat", sans-serif;
+}
+/* makes the first three inputs full-width without effecting checkmark input*/
+.contactForm tr:first-child td input {
+	width: 100%;
+}
+.contactForm tr:nth-child(2) td input {
+	width: 100%;
+}
+.contactForm tr:nth-child(3)  td input {
+	width: 100%;
+}
+
+/* --*/
+
+.checkLabel { /*spaces checkbox and checkbox labels vertically */
+	line-height: 40px;
+}
+
+.checkLabel input{ /*moves checkbox label text to the right */
+	margin-right:10px;
+}
+
+/* styles input placeholder text */
+.contactForm ::placeholder {
+	color:#FA62F6;
+	font-size:16px;
+	line-height: 20px;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 1px;
+	padding: 0 5px;
+}
+
+/* styles textarea placeholder text and textarea input text */
+.contactForm textarea {
+	width: 100%;
+	height: 150px;
+	padding: 7px 0;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* flex container for images */
+.flexRow {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	max-width: 100%;
+	margin-bottom:50px;
+}
+
+/* three column flex grid */
+.flexColumn {
+	flex: 30%;
+	max-width: 33%;
+	padding: 0 4px;
+}
+
+.flexColumn img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+/*footer*/
+
+#footerWrapper {
+	width: 100%;
+	float:left;
+	margin: 50px 0;
+} 
+
+#footer {
+	width: 1400px;
+	height: auto;
+	background-color:  #1F1F1F;
+	color:white;
+	margin:0 auto;
+	padding: 20px 0;
+
+}
+
+#socialFooter {
+	width: 207px; /*manually seems to be the exact width to contain the icons at font-size:50px with l/r margin 10px and padding 0 */
+	margin: 20px auto 50px;
+}
+
+a i  {             /*font awesome icons*/
+	font-size: 50px;
+	color: #E007DB;
+	margin: 0 10px;
+	padding: 0;
+}
+
+a:hover i {
+	color: #fff;
+}
+
+#copyright{
+	width: 350px;
+	margin: 0 auto;
+	
+}
+
+#copyright p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 10px;
+}
+
+
+
+
+
